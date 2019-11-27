@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android" id="cordova-plugin-sharelist" version="1.0.0">
+   
+   <name>ShareList</name>
+
+   <js-module name="ShareList" src="www/ShareList.js">
+      <clobbers target="ShareList" />
+   </js-module>
+
+   <platform name="android">
+      <config-file parent="/*" target="res/xml/config.xml">
+         <feature name="ShareList">
+            <param name="android-package" value="cordova.plugin.sharelist.ShareList" />
+         </feature>
+      </config-file>
+      <config-file parent="/*" target="AndroidManifest.xml" />
+      <source-file src="src/android/ShareList.java" target-dir="src/cordova/plugin/sharelist/ShareList" />
+   </platform>
+
+</plugin>
