@@ -1,4 +1,4 @@
-package cordova-plugin-sharelist;
+package cordova.plugin.sharelist;
 
 import org.apache.cordova.CordovaPlugin;
 import org.apache.cordova.CallbackContext;
